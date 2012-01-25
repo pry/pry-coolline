@@ -15,14 +15,16 @@ CLEAN.include("**/*#*", "**/*#*.*", "**/*_flymake*.*", "**/*_flymake",
 
 def apply_spec_defaults(s)
   s.name = PROJECT_NAME
-  s.summary = "FIX ME"
+  s.summary = "Live syntax-highlighting for the Pry REPL"
   s.version = PryCoolline::VERSION
   s.date = Time.now.strftime '%Y-%m-%d'
   s.author = "John Mair (banisterfiend)"
   s.email = 'jrmair@gmail.com'
   s.description = s.summary
+  s.add_dependency("coolline","~>0.1.0")
+  s.add_dependency("io-console","~>0.3.0")
   s.require_path = 'lib'
-  s.homepage = "http://banisterfiend.wordpress.com"
+  s.homepage = "https://github.com/pry/pry-coolline"
   s.files = Dir["lib/**/*.rb", "test/*.rb", "CHANGELOG", "README.md", "Rakefile"]
 end
 

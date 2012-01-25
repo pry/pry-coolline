@@ -3,25 +3,28 @@ pry-coolline
 
 (C) John Mair (banisterfiend) 2012
 
-FIXME: require "pry"
+_live syntax-highlighting for the Pry REPL_
 
-FIXME: _description goes here_
+The `pry-coolline` plugin provides live syntax highlighting for the
+[Pry](http://pry.github.com) REPL.
+
+It makes use of the [coolline](https://github.com/mon-ouie/coolline)
+gem and the `io/console` library.
 
 * Install the [gem](https://rubygems.org/gems/pry-coolline): `gem install pry-coolline`
-* Read the [documentation](http://rdoc.info/github/banister/pry-coolline/master/file/README.md)
-* See the [source code](http://github.com/banister/pry-coolline)
+* See the [source code](http://github.com/pry/pry-coolline)
 
-Example: Example description
---------
+<center>
+![Alt text](http://dl.dropbox.com/u/26521875/coolline.png)
 
-Example preamble
+Limitations
+-----------
 
-    puts "example code"
-
-Features and limitations
--------------------------
-
-Feature List Preamble
+* No Ruby < 1.9.2 support.
+* MRI only.
+* Poor support for long lines.
+* Pry's automatic indent is not yet compatible.
+* Occasionally has some quirks (hopefully ironed out in future).
 
 Contact
 -------
