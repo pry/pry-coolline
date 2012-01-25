@@ -15,7 +15,7 @@ gem and the `io/console` library.
 * See the [source code](http://github.com/pry/pry-coolline)
 
 
-How to use:
+**How to use:**
 
 After installing `pry-coolline` just start Pry as normal, the coolline
 plugin will be detected and used automatically.
