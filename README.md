@@ -14,6 +14,12 @@ gem and the `io/console` library.
 * Install the [gem](https://rubygems.org/gems/pry-coolline): `gem install pry-coolline`
 * See the [source code](http://github.com/pry/pry-coolline)
 
+
+How to use:
+
+After installing `pry-coolline` just start Pry as normal, the coolline
+plugin will be detected and used automatically.
+
 <center>
 ![Alt text](http://dl.dropbox.com/u/26521875/coolline.png)
 
