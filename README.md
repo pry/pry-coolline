@@ -23,12 +23,19 @@ plugin will be detected and used automatically.
 **Known Issues:**
 
 On some platforms the up and down cursor keys do not work properly; to
-get around this you can use the emacs keybindings. These are:
+get around this you can use the emacs keybindings.
+
+These are:
+
 
 `^p` equivalent to up-arrow
+
 `^n` equivalent to down-arrow
+
 `^d` equivalent to delete
+
 `^e` navigate to end of line
+
 `^a` navigate to start of line
 
 <center>
