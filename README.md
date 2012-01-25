@@ -6,7 +6,7 @@ pry-coolline
 _live syntax-highlighting for the Pry REPL_
 
 The `pry-coolline` plugin provides live syntax highlighting for the
-[Pry](http://pry.github.com) REPL.
+[Pry](http://pry.github.com) REPL for Ruby 1.9.2+ (MRI).
 
 It makes use of the [coolline](https://github.com/mon-ouie/coolline)
 gem and the `io/console` library.

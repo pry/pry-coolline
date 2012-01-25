@@ -23,6 +23,7 @@ def apply_spec_defaults(s)
   s.description = s.summary
   s.add_dependency("coolline","~>0.1.0")
   s.add_dependency("io-console","~>0.3.0")
+  s.required_ruby_version = '>= 1.9.2'
   s.require_path = 'lib'
   s.homepage = "https://github.com/pry/pry-coolline"
   s.files = Dir["lib/**/*.rb", "test/*.rb", "CHANGELOG", "README.md", "Rakefile"]
