@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pry-coolline}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{John Mair (banisterfiend)}]
-  s.date = %q{2012-01-25}
+  s.date = %q{2012-01-26}
   s.description = %q{Live syntax-highlighting for the Pry REPL}
   s.email = %q{jrmair@gmail.com}
-  s.files = [%q{.gemtest}, %q{.gitignore}, %q{.yardopts}, %q{CHANGELOG}, %q{LICENSE}, %q{README.md}, %q{Rakefile}, %q{lib/pry-coolline.rb}, %q{lib/pry-coolline/version.rb}, %q{test/test.rb}]
+  s.files = [%q{.gemtest}, %q{.gitignore}, %q{.yardopts}, %q{CHANGELOG}, %q{LICENSE}, %q{README.md}, %q{Rakefile}, %q{lib/pry-coolline.rb}, %q{lib/pry-coolline/version.rb}, %q{pry-coolline.gemspec}, %q{test/test.rb}]
   s.homepage = %q{https://github.com/pry/pry-coolline}
   s.require_paths = [%q{lib}]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")

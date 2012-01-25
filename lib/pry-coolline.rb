@@ -20,5 +20,5 @@ begin
 
   Pry.config.auto_indent = false
 rescue LoadError
-end
+end if ENV["TERM"] != "dumb"
 
