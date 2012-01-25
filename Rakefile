@@ -26,7 +26,8 @@ def apply_spec_defaults(s)
   s.required_ruby_version = '>= 1.9.2'
   s.require_path = 'lib'
   s.homepage = "https://github.com/pry/pry-coolline"
-  s.files = Dir["lib/**/*.rb", "test/*.rb", "CHANGELOG", "README.md", "Rakefile"]
+  s.files = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- test/*`.split("\n")
 end
 
 task :default => :test
@@ -45,6 +46,9 @@ desc "Show version"
 task :version do
   puts "PryCoolline version: #{PryCoolline::VERSION}"
 end
+
+desc  "Generate gemspec file"
+task :gemspec => "ruby:gemspec"
 
 namespace :ruby do
   spec = Gem::Specification.new do |s|
