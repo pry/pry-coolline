@@ -1,21 +1,21 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{pry-coolline}
-  s.version = "0.1.1"
+  s.name = "pry-coolline"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{John Mair (banisterfiend)}]
-  s.date = %q{2012-01-26}
-  s.description = %q{Live syntax-highlighting for the Pry REPL}
-  s.email = %q{jrmair@gmail.com}
-  s.files = [%q{.gemtest}, %q{.gitignore}, %q{.yardopts}, %q{CHANGELOG}, %q{LICENSE}, %q{README.md}, %q{Rakefile}, %q{lib/pry-coolline.rb}, %q{lib/pry-coolline/version.rb}, %q{pry-coolline.gemspec}, %q{test/test.rb}]
-  s.homepage = %q{https://github.com/pry/pry-coolline}
-  s.require_paths = [%q{lib}]
+  s.authors = ["John Mair (banisterfiend)"]
+  s.date = "2012-04-02"
+  s.description = "Live syntax-highlighting for the Pry REPL"
+  s.email = "jrmair@gmail.com"
+  s.files = [".gemtest", ".gitignore", ".yardopts", "CHANGELOG", "LICENSE", "README.md", "Rakefile", "lib/pry-coolline.rb", "lib/pry-coolline/version.rb", "pry-coolline.gemspec", "test/test.rb"]
+  s.homepage = "https://github.com/pry/pry-coolline"
+  s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{Live syntax-highlighting for the Pry REPL}
-  s.test_files = [%q{test/test.rb}]
+  s.rubygems_version = "1.8.16"
+  s.summary = "Live syntax-highlighting for the Pry REPL"
+  s.test_files = ["test/test.rb"]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
