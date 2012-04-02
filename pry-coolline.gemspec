@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = "pry-coolline"
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John Mair (banisterfiend)"]
-  s.date = "2012-04-02"
+  s.date = "2012-04-03"
   s.description = "Live syntax-highlighting for the Pry REPL"
   s.email = "jrmair@gmail.com"
   s.files = [".gemtest", ".gitignore", ".yardopts", "CHANGELOG", "LICENSE", "README.md", "Rakefile", "lib/pry-coolline.rb", "lib/pry-coolline/version.rb", "pry-coolline.gemspec", "test/test.rb"]
