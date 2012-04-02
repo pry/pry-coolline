@@ -18,7 +18,8 @@ begin
     end
   end
 
-  Pry.config.auto_indent = false
+  # bring saved history into coolline
+  Pry.config.input.history.reopen Pry.config.history.file
 rescue LoadError
 end if ENV["TERM"] != "dumb"
 
