@@ -21,7 +21,7 @@ def apply_spec_defaults(s)
   s.author = "John Mair (banisterfiend)"
   s.email = 'jrmair@gmail.com'
   s.description = s.summary
-  s.add_dependency("coolline","~>0.1.0")
+  s.add_dependency("coolline","~>0.2.0")
   s.add_dependency("io-console","~>0.3.0")
   s.required_ruby_version = '>= 1.9.2'
   s.require_path = 'lib'
