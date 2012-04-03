@@ -1,5 +1,3 @@
-# **PLEASE NOTE: This Gem has been yanked until further notice due to usability issues**
-
 pry-coolline
 ===========
 
