@@ -8,7 +8,7 @@ begin
   require 'coolline'
 
   Pry.config.input = Coolline.new do |cool|
-    cool.word_boundaries = [" ", "\t", ",", ";", ".", '"', "'", "`", "<", ">",
+    cool.word_boundaries = [" ", "\t", ",", ";", '"', "'", "`", "<", ">",
                             "=", ";", "|", "{", "}", "(", ")", "-"]
 
     # bring saved history into coolline
@@ -21,4 +21,3 @@ begin
 
 rescue LoadError
 end if ENV["TERM"] != "dumb"
-
