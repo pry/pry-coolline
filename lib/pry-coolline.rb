@@ -15,7 +15,11 @@ begin
     cool.history_file = Pry.config.history.file
 
     cool.transform_proc = proc do
-      CodeRay.scan(cool.line, :ruby).term
+      if Pry.color
+        CodeRay.scan(cool.line, :ruby).term
+      else
+        cool.line
+      end
     end
   end
 
