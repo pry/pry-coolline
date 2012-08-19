@@ -23,6 +23,31 @@ plugin will be detected and used automatically.
 <center>
 ![Alt text](http://dl.dropbox.com/u/26521875/coolline.png)
 
+Features
+--------
+
+*** Automatic Ruby syntax highlighting ***
+
+This is the main feature. It is enabled by default, as long as
+`Pry.config.color` is true.
+
+*** Matching of opening and closing parentheses and brackets ***
+
+`pry-coolline` allows to match parentheses and brackets automatically. This
+behavior can be configured and disabled altogether:
+
+    # Whether or not to enable this feature. Defaults to true.
+    Pry.config.coolline_paren_matching = false
+
+    # Change the color code inserted when paprens are (mis)matched.
+    Pry.config.coolline_matched_paren    = "\e[42m"
+    Pry.config.coolline_mismatched_paren = "\e[41m"
+
+    # In case you can't remember ANSI color codes ;)
+    require 'term/ansicolor'
+    Pry.config.coolline_matched_paren    = Term::ANSIColor.on_green
+    Pry.config.coolline_mismatched_paren = Term::ANSIColor.on_red
+
 Limitations
 -----------
 
