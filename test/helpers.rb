@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift File.expand_path(File.join("../lib"), File.dirname(__FILE__))
+$LOAD_PATH.unshift File.expand_path("../lib", File.dirname(__FILE__))
 
 require 'riot'
 require 'pry-coolline'
