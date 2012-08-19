@@ -26,12 +26,12 @@ plugin will be detected and used automatically.
 Features
 --------
 
-*** Automatic Ruby syntax highlighting ***
+***Automatic Ruby syntax highlighting***
 
 This is the main feature. It is enabled by default, as long as
 `Pry.config.color` is true.
 
-*** Matching of opening and closing parentheses and brackets ***
+***Matching of opening and closing parentheses and brackets***
 
 `pry-coolline` allows to match parentheses and brackets automatically. This
 behavior can be configured and disabled altogether:
