@@ -1,3 +1,3 @@
 module PryCoolline
-  VERSION = "0.2.0"
+  VERSION = "0.1.5"
 end
