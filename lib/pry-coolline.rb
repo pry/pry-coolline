@@ -18,7 +18,7 @@ begin
                             "=", ";", "|", "{", "}", "(", ")", "-"]
 
     # bring saved history into coolline
-    cool.history_file = Pry.config.history.file
+    cool.history_file = File.expand_path(Pry.config.history.file)
 
     cool.transform_proc = proc do
       if Pry.color
