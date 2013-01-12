@@ -7,7 +7,7 @@ module PryCoolline
       "{" => "}",
     }
 
-    AnsiCode = Coolline::AnsiCode
+    AnsiCode = %r{(\e\[\??\d+(?:[;\d]*)\w)}
 
     # A Token is a short chunk of code. This tokenizer only distinguishes three
     # kinds of token:
