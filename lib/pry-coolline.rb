@@ -11,28 +11,10 @@ Pry.config.coolline_mismatched_paren ||= "\e[41m"
 
 begin
   require 'coolline'
+
   require 'pry-coolline/paren_match'
+  require 'pry-coolline/wrapper'
 
-  Pry.config.input = Coolline.new do |cool|
-    cool.word_boundaries = [" ", "\t", ",", ";", '"', "'", "`", "<", ">",
-                            "=", ";", "|", "{", "}", "(", ")", "-"]
-
-    # bring saved history into coolline
-    cool.history_file = File.expand_path(Pry.config.history.file)
-
-    cool.transform_proc = proc do
-      if Pry.color
-        code = CodeRay.scan(cool.line, :ruby).term
-
-        if Pry.config.coolline_paren_matching
-          PryCoolline.apply_paren_matching(code, cool.pos)
-        end
-
-        code
-      else
-        cool.line
-      end
-    end
-  end
+  Pry.config.input = PryCoolline.make_input
 rescue LoadError
 end if ENV["TERM"] != "dumb"
