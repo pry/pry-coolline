@@ -4,8 +4,8 @@ module PryCoolline
       cool.readline prompt
     end
 
-    def completing_proc=(proc)
-      cool.completing_proc = proc do
+    def completion_proc=(proc)
+      cool.completion_proc = proc do
         proc.call cool.completed_word
       end
     end
