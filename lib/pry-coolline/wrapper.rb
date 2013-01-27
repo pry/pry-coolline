@@ -1,7 +1,7 @@
 module PryCoolline
   Wrapper = Struct.new(:cool) do
     def readline(prompt)
-      cool.readline propt
+      cool.readline prompt
     end
 
     def completing_proc=(proc)
