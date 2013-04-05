@@ -16,5 +16,10 @@ begin
   require 'pry-coolline/wrapper'
 
   Pry.config.input = PryCoolline.make_input
+
+  require 'bond'
+  Pry.config.completer = Pry::BondCompleter.start
+  Bond.start :readline => Pry.config.input.bond_adapter
+
 rescue LoadError
 end if ENV["TERM"] != "dumb"
