@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.date = "2012-04-03"
   s.description = "Live syntax-highlighting for the Pry REPL"
   s.email = "jrmair@gmail.com"
-  s.files = [".gemtest", ".gitignore", ".yardopts", "CHANGELOG", "LICENSE", "README.md", "Rakefile", "lib/pry-coolline.rb", "lib/pry-coolline/version.rb", "pry-coolline.gemspec"]
+  s.files = `git ls-files`.split("\n")
   s.homepage = "https://github.com/pry/pry-coolline"
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")
