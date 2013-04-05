@@ -9,6 +9,14 @@ module PryCoolline
         proc.call cool.completed_word
       end
     end
+
+    def bond_adapter
+      cool = self.cool
+      Module.new.extend(Module.new{
+        define_method(:setup){ |*| }
+        define_method(:line_buffer){ cool.line }
+      })
+    end
   end
 
   module_function
