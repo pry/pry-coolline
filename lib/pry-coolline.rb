@@ -18,8 +18,12 @@ begin
   Pry.config.input = PryCoolline.make_input
 
   require 'bond'
-  Pry.config.completer = Pry::BondCompleter.start
-  Bond.start :readline => Pry.config.input.bond_adapter
 
+  Pry.config.completer = Pry::BondCompleter.start
+
+  # Let's speak in Bond's metaphor.
+  # Assasinate the agent and replace it with one that uses our weapon.
+  Bond::M.reset
+  Bond.start :readline => Pry.config.input.bond_adapter
 rescue LoadError
 end if ENV["TERM"] != "dumb"
