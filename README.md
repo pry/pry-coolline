@@ -21,7 +21,7 @@ After installing `pry-coolline` just start Pry as normal, the coolline
 plugin will be detected and used automatically.
 
 <center>
-![Alt text](http://dl.dropbox.com/u/26521875/coolline.png)
+![Alt text](https://dl.dropboxusercontent.com/u/26521875/pics/coolline.png
 
 Features
 --------
