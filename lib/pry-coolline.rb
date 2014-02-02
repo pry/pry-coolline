@@ -19,7 +19,9 @@ begin
 
   require 'bond'
 
-  Pry.config.completer = Pry::BondCompleter.start
+  Pry::BondCompleter.start
+  # Fixes a bug with certain gem releases of pry
+  Pry.config.completer = Pry::BondCompleter
 
   # Let's speak in Bond's metaphor.
   # Assasinate the agent and replace it with one that uses our weapon.
