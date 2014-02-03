@@ -3,7 +3,7 @@
 $LOAD_PATH.unshift File.expand_path(File.join("../lib", __FILE__))
 require 'pry-coolline/version'
 
-Gem::Specification.new do
+Gem::Specification.new do |s|
   s.name = "pry-coolline"
 
   s.version = PryCoolline::VERSION
