@@ -1,31 +1,27 @@
 # -*- encoding: utf-8 -*-
 
-Gem::Specification.new do |s|
+$LOAD_PATH.unshift File.expand_path(File.join("../lib", __FILE__))
+require 'pry-coolline/version'
+
+Gem::Specification.new do
   s.name = "pry-coolline"
-  s.version = "0.1.4"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["John Mair (banisterfiend)"]
-  s.date = "2012-04-03"
-  s.description = "Live syntax-highlighting for the Pry REPL"
-  s.email = "jrmair@gmail.com"
-  s.files = `git ls-files`.split("\n")
-  s.homepage = "https://github.com/pry/pry-coolline"
-  s.require_paths = ["lib"]
-  s.required_ruby_version = Gem::Requirement.new(">= 1.9.2")
-  s.rubygems_version = "1.8.16"
+  s.version = PryCoolline::VERSION
+  s.date = Time.now.strftime '%Y-%m-%d'
+
   s.summary = "Live syntax-highlighting for the Pry REPL"
-  s.test_files = Dir["test/**/*.rb"]
+  s.description = s.summary
 
-  if s.respond_to? :specification_version then
-    s.specification_version = 3
+  s.email  = 'jrmair@gmail.com'
+  s.author = "John Mair (banisterfiend)"
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<coolline>, ["~> 0.4.0"])
-    else
-      s.add_dependency(%q<coolline>, ["~> 0.4.0"])
-    end
-  else
-    s.add_dependency(%q<coolline>, ["~> 0.4.0"])
-  end
+  s.homepage = "https://github.com/pry/pry-coolline"
+
+  s.files = `git ls-files`.split("\n")
+  s.test_files = `git ls-files -- test/*`.split("\n")
+
+  s.add_dependency("coolline","~>0.3")
+  s.add_development_dependency("riot")
+  s.required_ruby_version = '>= 1.9.2'
+  s.require_path = 'lib'
 end
