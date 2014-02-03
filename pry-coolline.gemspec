@@ -15,6 +15,8 @@ Gem::Specification.new do |s|
   s.email  = 'jrmair@gmail.com'
   s.author = "John Mair (banisterfiend)"
 
+  s.license = "MIT"
+
   s.homepage = "https://github.com/pry/pry-coolline"
 
   s.files = `git ls-files`.split("\n")
