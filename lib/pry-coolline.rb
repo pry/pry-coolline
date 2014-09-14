@@ -17,7 +17,7 @@ begin
 
   Pry.config.input = PryCoolline.make_input
 
-  require 'bond'
+  require 'pry-bond'
 
   Pry::BondCompleter.start
   # Fixes a bug with certain gem releases of pry
