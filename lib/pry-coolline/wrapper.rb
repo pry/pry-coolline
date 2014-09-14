@@ -24,8 +24,12 @@ module PryCoolline
   # @return [Coolline]
   def make_coolline
     Coolline.new do |cool|
-      cool.word_boundaries = [" ", "\t", ",", ";", '"', "'", "`", "<", ">",
-                              "=", ";", "|", "{", "}", "(", ")", "-"]
+      cool.completion_word_boundaries =
+        [" ", "\t", ",", ";", '"', "'", "`", "<", ">",
+         "=", ";", "|", "{", "}", "(", ")", "-"]
+
+      cool.word_boundaries = cool.completion_word_boundaries +
+        [".", ":"]
 
       # bring saved history into coolline
       cool.history_file = File.expand_path(Pry.config.history.file)
