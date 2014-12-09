@@ -4,7 +4,9 @@
 require 'pry'
 require 'pry-coolline/version'
 
-Pry.config.coolline_paren_matching ||= true
+unless defined?(Pry.config.coolline_paren_matching)
+  Pry.config.coolline_paren_matching = true
+end
 
 Pry.config.coolline_matched_paren    ||= "\e[42m"
 Pry.config.coolline_mismatched_paren ||= "\e[41m"
