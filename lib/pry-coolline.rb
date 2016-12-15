@@ -21,7 +21,11 @@ begin
 
   require 'pry-bond'
 
-  Pry::BondCompleter.start
+  if Pry::BondCompleter.respond_to?(:start)
+    Pry::BondCompleter.start
+  elsif Pry::BondCompleter.respond_to?(:setup)
+    Pry::BondCompleter.setup
+  end
   # Fixes a bug with certain gem releases of pry
   Pry.config.completer = Pry::BondCompleter
 
