@@ -2,7 +2,6 @@
 # (C) John Mair (banisterfiend); MIT license
 
 require 'pry'
-require 'pry-coolline/version'
 
 unless defined?(Pry.config.coolline_paren_matching)
   Pry.config.coolline_paren_matching = true
