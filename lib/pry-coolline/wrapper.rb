@@ -31,8 +31,15 @@ module PryCoolline
       cool.word_boundaries = cool.completion_word_boundaries +
         [".", ":"]
 
+      pry_history_file =
+        if Gem::Version.new(Pry::VERSION) >= Gem::Version.new("0.13")
+          Pry.config.history_file
+        else
+          Pry.config.history.file
+        end
+
       # bring saved history into coolline
-      cool.history_file = File.expand_path(Pry.config.history.file)
+      cool.history_file = File.expand_path(pry_history_file)
 
       cool.transform_proc = proc do
         if Pry.color
