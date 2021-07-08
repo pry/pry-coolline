@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-$LOAD_PATH.unshift File.expand_path(File.join("../lib", __FILE__))
+$:.push File.expand_path('../lib', __FILE__)
 require 'pry-coolline/version'
 
 Gem::Specification.new do |s|
