@@ -1,6 +1,7 @@
 $:.unshift 'lib'
 
 PROJECT_NAME = "pry-coolline"
+direc = File.dirname(__FILE__)
 
 require 'rake/clean'
 require "#{PROJECT_NAME}/version"
