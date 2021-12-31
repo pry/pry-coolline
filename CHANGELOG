@@ -1,0 +1,11 @@
+## 0.2.6 (December 31th, 2021)
+
+Bugfixes:
+- Support v0.13 Pry config API, fixes #36 (@owst, #37)
+- Fix versioned experiments when used with allow_multiple_experiments=control (@andrehjr, #613)
+
+Features:
+- Enabled the option to actually disable paren matching (@threeifbywhiskey, #30)
+
+Misc:
+- change how load path is modified (@stevenchanin, #38)
