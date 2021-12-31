@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency("coolline","~>0.5")
   s.add_development_dependency("riot")
+  s.add_development_dependency 'rake', "~> 10.0"
   s.required_ruby_version = '>= 1.9.2'
   s.require_path = 'lib'
 end
