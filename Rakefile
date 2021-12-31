@@ -1,9 +1,9 @@
-$:.unshift 'lib'
+require 'bundler/gem_tasks'
 
 PROJECT_NAME = "pry-coolline"
+direc = File.dirname(__FILE__)
 
 require 'rake/clean'
-require "#{PROJECT_NAME}/version"
 
 CLOBBER.include("**/*~", "**/*#*", "**/*.log")
 CLEAN.include("**/*#*", "**/*#*.*", "**/*_flymake*.*", "**/*_flymake",

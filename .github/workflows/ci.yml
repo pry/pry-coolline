@@ -1,0 +1,33 @@
+name: pry
+
+on: [push]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        ruby:
+          - 2.5
+          - 2.6
+          - 2.7
+          - '3.0'
+          - 3.1
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby }}
+
+    - name: Install dependencies
+      run: bundle install
+
+    - name: Display Ruby version
+      run: ruby -v
+
+    - name: Test
+      run: bundle exec rake test
