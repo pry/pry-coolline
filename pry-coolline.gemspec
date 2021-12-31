@@ -22,9 +22,10 @@ Gem::Specification.new do |s|
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- test/*`.split("\n")
 
-  s.add_dependency("coolline","~>0.5")
-  s.add_development_dependency("riot")
-  s.add_development_dependency 'rake', "~> 10.0"
+  s.add_dependency "coolline", "~>0.5"
+  s.add_dependency "pry", "~> 0.13"
+  s.add_development_dependency "riot"
+  s.add_development_dependency "rake", "~> 10.0"
   s.required_ruby_version = '>= 1.9.2'
   s.require_path = 'lib'
 end
